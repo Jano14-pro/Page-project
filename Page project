@@ -1,0 +1,33 @@
+import tkinter
+import customtkinter
+
+win = customtkinter.CTk()
+win.geometry("330x550")
+customtkinter.set_appearance_mode("dark")
+
+nav = customtkinter.CTkFrame(win, height=60, width=330, fg_color = "black")
+nav.place(relx = 0, rely = 0)
+
+logo = customtkinter.CTkLabel(nav, fg_color = "black", text="Agape Academy", text_color = "white", font = ("Georgia",20))
+logo.place(relx = 0.27, rely = 0.25)
+
+frame = customtkinter.CTkFrame(win, fg_color = "silver")
+frame.place(relx = 0.1, rely = 0.2, relwidth = 0.8, relheight = 0.7)
+
+
+title = customtkinter.CTkLabel(win,text="Registration page", text_color = "white", font = ("Georgia",20), fg_color = "silver")
+title.place(relx = 0.25, rely = 0.25)
+
+user_entry = customtkinter.CTkEntry(win, fg_color = "silver", placeholder_text = "Username")
+user_entry.place(relx = 0.27, rely = 0.35)
+
+pass_entry = customtkinter.CTkEntry(win, fg_color = "silver", placeholder_text = "Password")
+pass_entry.place(relx = 0.27, rely = 0.45)
+
+button = customtkinter.CTkButton(win, text = "Sign Up")
+button.place(relx = 0.27, rely = 0.55)
+
+
+
+
+win.mainloop()
